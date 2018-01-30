@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "description": "tools and tasks for workshop",
   "scripts": {
-    "test:unit:dbg": "./node_modules/mocha/bin/mocha --inspect --debug-brk -r ./tests/setup.js  -- \"./tests/specs/*.spec.js\"",
-    "test:unit": "./node_modules/mocha/bin/mocha -r ./tests/setup.js  -- \"./tests/specs/*.spec.js\""
+    "test:unit:dbg": "./node_modules/mocha/bin/mocha --inspect --debug-brk -r ./tools/setup.js  -- \"./tools/specs/*.spec.js\"",
+    "test:unit": "./node_modules/mocha/bin/mocha -r ./tools/setup.js  -- \"./tools/specs/*.spec.js\""
   },
   "devDependencies": {
     "mocha": "*",
