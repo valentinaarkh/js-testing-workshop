@@ -23,6 +23,19 @@ describe('deque', function() {
         it ('should add the node to this.head with passed left-parameter to "true"', function() {
             let deque = new Deque();
             const node = {
+                value: 5,
+                next: null
+            }
+            const currentHead = deque.head;
+            deque.push(true, node);
+
+            expect(deque.head.next).to.be.equal(currentHead);
+        });
+
+
+        it ('should update links between nodes', function() {
+            let deque = new Deque();
+            const node = {
                 value: 5
             }
             deque.push(true, node);
@@ -102,4 +115,15 @@ describe('deque', function() {
         });
 
     });
+
+    // describe('merge', function() {
+    //     it('should return this.head element with passed parameter "true"', function() {
+    //         let firstDeque = new Deque();
+    //         let secondDeque = new Deque();
+    //         const result = firstDeque.merge.secondDeque(true);
+    //
+    //         expect(result).to.be.equal();
+    //     });
+    //
+    // });
 });
